@@ -349,42 +349,62 @@
 
     <section id="contato">
 
-        <h2 class="title">
-            Vamos conversar?
-        </h2>
+    <h2 class="title">
+        Vamos conversar?
+    </h2>
 
-        <p class="contact-text">
+    <p class="contact-text">
 
-            Estou sempre procurando aprender novas tecnologias,
-            participar de projetos
-            e oportunidades de estágio.
+        Estou sempre procurando aprender novas tecnologias,
+        participar de projetos e oportunidades de estágio.
 
-        </p>
+    </p>
 
-        <div class="contact-buttons">
+    <form id="contact-form" class="contact-form">
 
-            <a href="mailto:leonardovasconcelos324355@gmail.com"
-                class="btn">
+        <input
+            type="text"
+            name="name"
+            placeholder="Seu nome"
+            required>
 
-                <i class="fa-solid fa-envelope"></i>
+        <input
+            type="email"
+            name="email"
+            placeholder="Seu e-mail"
+            required>
 
-                Enviar Email
+        <textarea
+            name="message"
+            rows="6"
+            placeholder="Digite sua mensagem"
+            required></textarea>
 
-            </a>
+        <button type="submit" class="btn">
 
-            <a href="https://github.com/leovsv-cmd"
-                target="_blank"
-                class="btn github">
+            <i class="fa-solid fa-paper-plane"></i>
 
-                <i class="fa-brands fa-github"></i>
+            Enviar Mensagem
 
-                GitHub
+        </button>
 
-            </a>
+    </form>
 
-        </div>
+    <div class="contact-buttons">
 
-    </section>
+        <a href="https://github.com/leovsv-cmd"
+           target="_blank"
+           class="btn github">
+
+            <i class="fab fa-github"></i>
+
+            GitHub
+
+        </a>
+
+    </div>
+
+</section>
 
     <!-- FOOTER -->
 
@@ -430,7 +450,13 @@
 
     </footer>
 
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+emailjs.init("-IDK8-jp2F0O79Agl");
+</script>
+
+<script src="script.js"></script>
 
 </body>
 
