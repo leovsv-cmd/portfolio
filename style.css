@@ -509,3 +509,7 @@ section{
     cursor:pointer;
 
 }
+a {
+    color: inherit; /* usa a cor do elemento pai */
+    text-decoration: none; /* remove o sublinhado */
+}
