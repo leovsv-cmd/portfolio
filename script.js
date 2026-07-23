@@ -38,3 +38,35 @@ function aparecer() {
 
 window.addEventListener("scroll", aparecer);
 aparecer();
+
+const form = document.getElementById("contact-form");
+
+if (form) {
+
+    form.addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        emailjs.sendForm(
+            "service_vpb56zq",
+            "template_gaczacm",
+            this
+        )
+
+        .then(() => {
+
+            alert("Mensagem enviada com sucesso!");
+            form.reset();
+
+        })
+
+        .catch((error) => {
+
+            console.error(error);
+            alert("Erro ao enviar a mensagem.");
+
+        });
+
+    });
+
+}
