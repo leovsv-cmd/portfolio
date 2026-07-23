@@ -13,17 +13,7 @@ function escrever() {
 window.onload = escrever;
 
 
-// Botão de contato
-const botao = document.querySelector("#contato");
 
-if (botao) {
-    botao.addEventListener("click", () => {
-        alert("Obrigado por visitar meu portfólio!");
-    });
-}
-
-
-// Animação ao rolar a página
 const elementos = document.querySelectorAll(".animar");
 
 function aparecer() {
